@@ -4,19 +4,27 @@ const craterList = [
     ["Byrgius", 116.875, 179.75, ""],
     ["Copernicus", 245.125, 394.6875, ""],
     ["Eratosthenes", 290.28125, 429.125, ""],
-    ["Furnerius", 601.90625, 224.6875, ""],
     ["Grimaldi", 68, 275.5, ""],
     ["Kepler", 158.875, 370.46875, ""],
+    ["Langrenus", 638, 355.625, ""],
     ["Plato", 284.15625, 599.5625, ""],
     ["Posidonius", 464.875, 548.5625, ""],
+    ["Stevinus", 601.90625, 224.6875, ""],
     ["Tycho", 351.25, 133.75, ""],
 ];
 
-// 284.15625, 599.5625
-
 const mariaList = [
     ["Mare Crisium (Sea of Crises)", 600.125, 493.25, ""],
+    ["Mare Fecunditatis (Sea of Fecundity)", 606.75, 385.5, ""],
+    ["Mare Frigoris (Sea of Cold)", 288.25, 623.25, ""],
+    ["Mare Humorum (Sea of Humidity)", 196.5, 202.5, ""],
+    ["Mare Imbrium (Sea of Rains)", 250.25, 528.25, ""],
+    ["Mare Nectaris (Sea of Nectar)", 546.75, 305.5, ""],
+    ["Mare Nubium (Sea of Clouds)", 303.625, 231.25, ""],
+    ["Mare Serenitatis (Sea of Serenity)", 429.5, 512.5, ""],
     ["Mare Tranquillitatus (Sea of Tranquility)", 494, 428.75, ""],
+    ["Mare Vaporum (Sea of Vapors)", 374.875, 436.5, ""],
+    ["Oceanus Procellarum (Ocean of Storms)", 107, 373, ""],
 ];
 
 const apolloList = [
