@@ -36,6 +36,9 @@ const apolloList = [
     ["Apollo 17", 492.75, 494.75, "December 1972 - Taurus-Littrow Valley", "https://en.wikipedia.org/wiki/Apollo_17"],
 ];
 
+/**
+ * Initialize everything.  This should be called on the index page body load.
+ */
 function init() {
     var craters = loadMarkers("crater.png", craterList);
     var maria = loadMarkers("mare.png", mariaList);
@@ -58,6 +61,9 @@ function init() {
     map.on('contextmenu', onMapClick);
 }
 
+/**
+ * Flips the x/y coordinates: We're working with a non-geographical "map".
+ */
 function xy(x, y) {
     var yx = L.latLng;
 
@@ -67,10 +73,17 @@ function xy(x, y) {
     return yx(y, x); // When doing xy(x, y);
 }
 
+/**
+ * Captures the lat/lng values for the clicked point.  (Remember to flip these values
+ * before using them as x/y coordinates.)
+ */
 function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 }
 
+/**
+ * Loads all the markers from the provided list into a new layer group.
+ */
 function loadMarkers(iconFileName, markerList) {
     var markerIcon = L.icon({ iconUrl: "images/icons/" + iconFileName, iconSize: [25, 25] });
     var newLayerGroup = L.layerGroup();
